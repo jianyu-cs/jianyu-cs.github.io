@@ -1,0 +1,509 @@
+<html>
+<head>
+<title>Connective Implicature Visualization</title>
+<style>
+td {vertical-align:top;padding:5px}
+pre {white-space: pre-wrap;}
+</style>
+</head>
+<body>
+<h1>Connective Implicature Visualization</h1>
+
+<script
+    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+    crossorigin="anonymous"
+></script>
+<script>
+function frameMove(elem, offset) {
+    elem = $(elem);
+    window.elem = elem;
+    data = JSON.parse(elem.parent().find(".data").html());
+    index = parseInt(elem.parent().find(".index").val());
+
+    nextIndex = index + offset;
+    if (nextIndex < 0) nextIndex = 0;
+    if (nextIndex >= data.length) nextIndex = data.length - 1;
+
+    elem.parent().find(".index").val(nextIndex);
+    if ("image" in data[nextIndex]) {
+        elem.parent().find(".image").attr("src", data[nextIndex]["image"][0]).attr("alt", data[nextIndex]["image"][1]);
+    } else {
+        elem.parent().find(".text").html(data[nextIndex]["text"]);
+    }
+
+    if ("info" in data[nextIndex]) {
+        elem.parent().find(".info").html("Frame #" + nextIndex.toString() + " :: " + data[nextIndex]["info"]);
+    } else {
+        elem.parent().find(".info").html("Frame #" + nextIndex.toString());
+    }
+}
+</script>
+    
+<style>
+.table0_column_text {  }
+.table0_td_text {  }
+.table0_column_image_1 {  }
+.table0_td_image_1 {  }
+.table0_column_image_2 {  }
+.table0_td_image_2 {  }
+.table0_column_image_3 {  }
+.table0_td_image_3 {  }
+.table0_column_image_4 {  }
+.table0_td_image_4 {  }
+.table0_column_image_5 {  }
+.table0_td_image_5 {  }
+.table0_column_answer {  }
+.table0_td_answer {  }
+</style>
+<h3>Imagine you are playing a reference game. Both you and your partner can see the images below. Your partner is additionally assigned two referent images, and he needs to verbally describe them to you. He will be rewarded if you can successfully pick the two referent images. In terms of this, he says “xx”. Which two should be the most plausible images?</h3>
+<table>
+<tr>
+  <td><b>Text</b></td>
+  <td><b>Image_1</b></td>
+  <td><b>Image_2</b></td>
+  <td><b>Image_3</b></td>
+  <td><b>Image_4</b></td>
+  <td><b>Image_5</b></td>
+  <td><b>Answer</b></td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> large cylinders or purple spheres
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../direct_implicature/0/SoMs/CLEVR_000004.png" alt="CLEVR_000004.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../direct_implicature/0/SoMs/CLEVR_000002.png" alt="CLEVR_000002.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../direct_implicature/0/SoMs/CLEVR_000001.png" alt="CLEVR_000001.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../direct_implicature/0/SoMs/CLEVR_000003.png" alt="CLEVR_000003.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../direct_implicature/0/SoMs/CLEVR_000000.png" alt="CLEVR_000000.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 3, 5<br><b>Type:</b> direct_implicature
+  </td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> small gray cylinders or small brown spheres
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../direct_implicature/1/SoMs/CLEVR_000007.png" alt="CLEVR_000007.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../direct_implicature/1/SoMs/CLEVR_000009.png" alt="CLEVR_000009.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../direct_implicature/1/SoMs/CLEVR_000005.png" alt="CLEVR_000005.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../direct_implicature/1/SoMs/CLEVR_000006.png" alt="CLEVR_000006.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../direct_implicature/1/SoMs/CLEVR_000008.png" alt="CLEVR_000008.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 3, 4<br><b>Type:</b> direct_implicature
+  </td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> large cylinders or yellow rubber cubes
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../direct_implicature/2/SoMs/CLEVR_000012.png" alt="CLEVR_000012.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../direct_implicature/2/SoMs/CLEVR_000013.png" alt="CLEVR_000013.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../direct_implicature/2/SoMs/CLEVR_000014.png" alt="CLEVR_000014.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../direct_implicature/2/SoMs/CLEVR_000010.png" alt="CLEVR_000010.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../direct_implicature/2/SoMs/CLEVR_000011.png" alt="CLEVR_000011.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 4, 5<br><b>Type:</b> direct_implicature
+  </td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> small metal spheres or small cubes
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../direct_implicature/3/SoMs/CLEVR_000015.png" alt="CLEVR_000015.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../direct_implicature/3/SoMs/CLEVR_000017.png" alt="CLEVR_000017.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../direct_implicature/3/SoMs/CLEVR_000016.png" alt="CLEVR_000016.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../direct_implicature/3/SoMs/CLEVR_000019.png" alt="CLEVR_000019.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../direct_implicature/3/SoMs/CLEVR_000018.png" alt="CLEVR_000018.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 1, 3<br><b>Type:</b> direct_implicature
+  </td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> small rubber cubes or metal spheres
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../direct_implicature/4/SoMs/CLEVR_000023.png" alt="CLEVR_000023.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../direct_implicature/4/SoMs/CLEVR_000021.png" alt="CLEVR_000021.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../direct_implicature/4/SoMs/CLEVR_000024.png" alt="CLEVR_000024.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../direct_implicature/4/SoMs/CLEVR_000020.png" alt="CLEVR_000020.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../direct_implicature/4/SoMs/CLEVR_000022.png" alt="CLEVR_000022.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 2, 4<br><b>Type:</b> direct_implicature
+  </td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> Not cyan metal cubes and yellow rubber cubes
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../indirect_implicature/0/SoMs/CLEVR_000029.png" alt="CLEVR_000029.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../indirect_implicature/0/SoMs/CLEVR_000025.png" alt="CLEVR_000025.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../indirect_implicature/0/SoMs/CLEVR_000027.png" alt="CLEVR_000027.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../indirect_implicature/0/SoMs/CLEVR_000028.png" alt="CLEVR_000028.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../indirect_implicature/0/SoMs/CLEVR_000026.png" alt="CLEVR_000026.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 2, 5<br><b>Type:</b> indirect_implicature
+  </td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> Not metal cylinders and rubber cylinders
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../indirect_implicature/1/SoMs/CLEVR_000032.png" alt="CLEVR_000032.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../indirect_implicature/1/SoMs/CLEVR_000034.png" alt="CLEVR_000034.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../indirect_implicature/1/SoMs/CLEVR_000033.png" alt="CLEVR_000033.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../indirect_implicature/1/SoMs/CLEVR_000030.png" alt="CLEVR_000030.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../indirect_implicature/1/SoMs/CLEVR_000031.png" alt="CLEVR_000031.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 4, 5<br><b>Type:</b> indirect_implicature
+  </td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> Not large spheres and cubes
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../indirect_implicature/2/SoMs/CLEVR_000035.png" alt="CLEVR_000035.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../indirect_implicature/2/SoMs/CLEVR_000036.png" alt="CLEVR_000036.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../indirect_implicature/2/SoMs/CLEVR_000039.png" alt="CLEVR_000039.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../indirect_implicature/2/SoMs/CLEVR_000038.png" alt="CLEVR_000038.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../indirect_implicature/2/SoMs/CLEVR_000037.png" alt="CLEVR_000037.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 1, 2<br><b>Type:</b> indirect_implicature
+  </td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> Not brown metal cylinders and small spheres
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../indirect_implicature/3/SoMs/CLEVR_000043.png" alt="CLEVR_000043.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../indirect_implicature/3/SoMs/CLEVR_000044.png" alt="CLEVR_000044.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../indirect_implicature/3/SoMs/CLEVR_000041.png" alt="CLEVR_000041.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../indirect_implicature/3/SoMs/CLEVR_000040.png" alt="CLEVR_000040.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../indirect_implicature/3/SoMs/CLEVR_000042.png" alt="CLEVR_000042.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 3, 4<br><b>Type:</b> indirect_implicature
+  </td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> Not large gray rubber cubes and spheres
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../indirect_implicature/4/SoMs/CLEVR_000049.png" alt="CLEVR_000049.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../indirect_implicature/4/SoMs/CLEVR_000046.png" alt="CLEVR_000046.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../indirect_implicature/4/SoMs/CLEVR_000047.png" alt="CLEVR_000047.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../indirect_implicature/4/SoMs/CLEVR_000048.png" alt="CLEVR_000048.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../indirect_implicature/4/SoMs/CLEVR_000045.png" alt="CLEVR_000045.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 2, 5<br><b>Type:</b> indirect_implicature
+  </td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> cubes or blue cylinders
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../cancel_direct_implicature/0/SoMs/CLEVR_000054.png" alt="CLEVR_000054.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../cancel_direct_implicature/0/SoMs/CLEVR_000051.png" alt="CLEVR_000051.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../cancel_direct_implicature/0/SoMs/CLEVR_000050.png" alt="CLEVR_000050.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../cancel_direct_implicature/0/SoMs/CLEVR_000053.png" alt="CLEVR_000053.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../cancel_direct_implicature/0/SoMs/CLEVR_000052.png" alt="CLEVR_000052.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 2, 3<br><b>Type:</b> cancel_direct_implicature
+  </td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> large rubber spheres or small rubber cubes
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../cancel_direct_implicature/1/SoMs/CLEVR_000058.png" alt="CLEVR_000058.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../cancel_direct_implicature/1/SoMs/CLEVR_000059.png" alt="CLEVR_000059.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../cancel_direct_implicature/1/SoMs/CLEVR_000057.png" alt="CLEVR_000057.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../cancel_direct_implicature/1/SoMs/CLEVR_000056.png" alt="CLEVR_000056.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../cancel_direct_implicature/1/SoMs/CLEVR_000055.png" alt="CLEVR_000055.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 4, 5<br><b>Type:</b> cancel_direct_implicature
+  </td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> small cylinders or large rubber spheres
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../cancel_direct_implicature/2/SoMs/CLEVR_000061.png" alt="CLEVR_000061.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../cancel_direct_implicature/2/SoMs/CLEVR_000062.png" alt="CLEVR_000062.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../cancel_direct_implicature/2/SoMs/CLEVR_000064.png" alt="CLEVR_000064.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../cancel_direct_implicature/2/SoMs/CLEVR_000063.png" alt="CLEVR_000063.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../cancel_direct_implicature/2/SoMs/CLEVR_000060.png" alt="CLEVR_000060.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 1, 5<br><b>Type:</b> cancel_direct_implicature
+  </td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> cube or large blue metal sphere
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../cancel_direct_implicature/3/SoMs/CLEVR_000065.png" alt="CLEVR_000065.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../cancel_direct_implicature/3/SoMs/CLEVR_000069.png" alt="CLEVR_000069.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../cancel_direct_implicature/3/SoMs/CLEVR_000067.png" alt="CLEVR_000067.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../cancel_direct_implicature/3/SoMs/CLEVR_000066.png" alt="CLEVR_000066.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../cancel_direct_implicature/3/SoMs/CLEVR_000068.png" alt="CLEVR_000068.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 1, 4<br><b>Type:</b> cancel_direct_implicature
+  </td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> red cylinders or large purple cubes
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../cancel_direct_implicature/4/SoMs/CLEVR_000072.png" alt="CLEVR_000072.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../cancel_direct_implicature/4/SoMs/CLEVR_000074.png" alt="CLEVR_000074.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../cancel_direct_implicature/4/SoMs/CLEVR_000071.png" alt="CLEVR_000071.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../cancel_direct_implicature/4/SoMs/CLEVR_000070.png" alt="CLEVR_000070.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../cancel_direct_implicature/4/SoMs/CLEVR_000073.png" alt="CLEVR_000073.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 3, 4<br><b>Type:</b> cancel_direct_implicature
+  </td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> Not green rubber cubes and small red spheres
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../cancel_indirect_implicature/0/SoMs/CLEVR_000079.png" alt="CLEVR_000079.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../cancel_indirect_implicature/0/SoMs/CLEVR_000075.png" alt="CLEVR_000075.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../cancel_indirect_implicature/0/SoMs/CLEVR_000076.png" alt="CLEVR_000076.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../cancel_indirect_implicature/0/SoMs/CLEVR_000078.png" alt="CLEVR_000078.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../cancel_indirect_implicature/0/SoMs/CLEVR_000077.png" alt="CLEVR_000077.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 2, 3<br><b>Type:</b> cancel_indirect_implicature
+  </td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> Not spheres and small cubes
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../cancel_indirect_implicature/1/SoMs/CLEVR_000081.png" alt="CLEVR_000081.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../cancel_indirect_implicature/1/SoMs/CLEVR_000082.png" alt="CLEVR_000082.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../cancel_indirect_implicature/1/SoMs/CLEVR_000083.png" alt="CLEVR_000083.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../cancel_indirect_implicature/1/SoMs/CLEVR_000084.png" alt="CLEVR_000084.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../cancel_indirect_implicature/1/SoMs/CLEVR_000080.png" alt="CLEVR_000080.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 1, 5<br><b>Type:</b> cancel_indirect_implicature
+  </td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> Not large spheres and large cylinders
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../cancel_indirect_implicature/2/SoMs/CLEVR_000087.png" alt="CLEVR_000087.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../cancel_indirect_implicature/2/SoMs/CLEVR_000086.png" alt="CLEVR_000086.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../cancel_indirect_implicature/2/SoMs/CLEVR_000088.png" alt="CLEVR_000088.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../cancel_indirect_implicature/2/SoMs/CLEVR_000089.png" alt="CLEVR_000089.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../cancel_indirect_implicature/2/SoMs/CLEVR_000085.png" alt="CLEVR_000085.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 2, 5<br><b>Type:</b> cancel_indirect_implicature
+  </td>
+</tr>
+<tr>
+  <td class="table0_td_text">
+    <b>Utterance:</b> Not large cylinders and large cyan metal cubes
+  </td>
+  <td class="table0_td_image_1">
+    <img class="table0_column_image_1" src="../cancel_indirect_implicature/3/SoMs/CLEVR_000092.png" alt="CLEVR_000092.png" />
+  </td>
+  <td class="table0_td_image_2">
+    <img class="table0_column_image_2" src="../cancel_indirect_implicature/3/SoMs/CLEVR_000093.png" alt="CLEVR_000093.png" />
+  </td>
+  <td class="table0_td_image_3">
+    <img class="table0_column_image_3" src="../cancel_indirect_implicature/3/SoMs/CLEVR_000091.png" alt="CLEVR_000091.png" />
+  </td>
+  <td class="table0_td_image_4">
+    <img class="table0_column_image_4" src="../cancel_indirect_implicature/3/SoMs/CLEVR_000094.png" alt="CLEVR_000094.png" />
+  </td>
+  <td class="table0_td_image_5">
+    <img class="table0_column_image_5" src="../cancel_indirect_implicature/3/SoMs/CLEVR_000090.png" alt="CLEVR_000090.png" />
+  </td>
+  <td class="table0_td_answer">
+    <b>Referents:</b> Image 3, 5<br><b>Type:</b> cancel_indirect_implicature
+  </td>
+</tr>
+</table>
+</body>
+</html>
