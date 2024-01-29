@@ -27,7 +27,7 @@ def main():
         else:
             cancel_files.append(file)
     all_files = random.sample(impli_files, 100) + random.sample(cancel_files, 100)
-    
+    random.shuffle(all_files)
         
     visualizer = HTMLTableVisualizer('./html_visualizer_all', f'Connective Implicature Visualization, CLEVR Domain, 200')
     with visualizer.html(), visualizer.table('In this reference game, the speaker will generate a statement to describe two images, and both the speaker and you will be rewarded if you can correctly identify both referent images. Please proceed by selecting your answers based on the corresponding numerical image index.', [
