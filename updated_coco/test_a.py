@@ -73,7 +73,7 @@ def main():
             #with open(json_filename, 'r') as f:
             #    ans = json.load(f)
             #data = jacinle.load(json_filename)
-            utterance = utterance.replace("It contains", "There are").replace("The image shows", "There are").replace("The image  shows", "There are").replace(" in the images", "").replace(".", "")+" in the images."
+            utterance = utterance.replace("It contains", "There are").replace('benchs', 'benches').replace("The image shows", "There are").replace("The image  shows", "There are").replace(" in the images", "").replace(".", "")+" in the images."
             
             
             text = f'<b>Game:</b> {game_setup}<br><b>Speaker:</b> {utterance}'
