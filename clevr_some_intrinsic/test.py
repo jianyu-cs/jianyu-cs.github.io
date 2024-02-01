@@ -23,13 +23,14 @@ def main():
     visualizer = HTMLTableVisualizer('./html_visualizer', f'Quantifier Implicature Visualization, CLEVR Direct, Intrinsic Attributes, 200')
     with visualizer.html(), visualizer.table('In this reference game, the speaker will generate a statement to describe two images, and both the speaker and you will be rewarded if you can correctly identify both referent images. Please proceed by selecting your answers based on the corresponding numerical image index.', [
         HTMLTableColumnDesc('text', 'Text', 'raw'),
+        HTMLTableColumnDesc('text1', 'ID', 'raw'),
         HTMLTableColumnDesc('image1', 'Image 1', 'image'),
         HTMLTableColumnDesc('image2', 'Image 2', 'image'),
         HTMLTableColumnDesc('image3', 'Image 3', 'image'),
         HTMLTableColumnDesc('answer', 'Answer', 'raw'),
         #HTMLTableColumnDesc('type', 'Implicature Type', 'raw'),
     ]):
-        for file_name in meta_list: #os.listdir("./meta_data/"):
+        for k, file_name in enumerate(meta_list): #os.listdir("./meta_data/"):
             #image1_filename = f'./images/CLEVR_00000{int(start_idx)}.png'
             #image2_filename = f'./SoMs/CLEVR_00000{int(start_idx)}.png'
             json_filename = f'./meta_data/{file_name}'
@@ -80,7 +81,7 @@ def main():
             #type_ = f'<b>Type:</b> {implicature_type}'
             print(images, json_filename)
 
-            visualizer.row(image1=images[0], image2=images[1], image3=images[2], text=text, answer=answer)
+            visualizer.row(text1=str(k), image1=images[0], image2=images[1], image3=images[2], text=text, answer=answer)
 
 
 if __name__ == '__main__':
