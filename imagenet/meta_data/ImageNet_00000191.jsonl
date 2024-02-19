@@ -1,0 +1,4 @@
+{"utterance": "Not connexion.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00034361.JPEG"]}
+{"image": "ILSVRC2012_val_00034361.JPEG", "category": "necklace"}
+{"image": "ILSVRC2012_val_00023126.JPEG", "category": "chain"}
+{"image": "ILSVRC2012_val_00025895.JPEG", "category": "chain"}

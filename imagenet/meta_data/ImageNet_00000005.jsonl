@@ -1,0 +1,4 @@
+{"utterance": "Not volcano.", "type": "indirect implicature", "referents": ["ILSVRC2012_val_00043503.JPEG"]}
+{"image": "ILSVRC2012_val_00043503.JPEG", "category": "alp"}
+{"image": "ILSVRC2012_val_00048040.JPEG", "category": "volcano"}
+{"image": "ILSVRC2012_val_00005624.JPEG", "category": "espresso"}

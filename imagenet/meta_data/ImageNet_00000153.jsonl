@@ -1,0 +1,4 @@
+{"utterance": "Not stew.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00022382.JPEG"]}
+{"image": "ILSVRC2012_val_00022382.JPEG", "category": "trifle"}
+{"image": "ILSVRC2012_val_00036307.JPEG", "category": "hot pot, hotpot"}
+{"image": "ILSVRC2012_val_00041062.JPEG", "category": "hot pot, hotpot"}

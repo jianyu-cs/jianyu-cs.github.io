@@ -1,0 +1,4 @@
+{"utterance": "Not cuke.", "type": "indirect implicature", "referents": ["ILSVRC2012_val_00010470.JPEG"]}
+{"image": "ILSVRC2012_val_00010470.JPEG", "category": "broccoli"}
+{"image": "ILSVRC2012_val_00045704.JPEG", "category": "cucumber, cuke"}
+{"image": "ILSVRC2012_val_00016904.JPEG", "category": "red wine"}

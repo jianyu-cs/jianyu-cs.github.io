@@ -1,0 +1,4 @@
+{"utterance": "Not handkerchief.", "type": "indirect implicature", "referents": ["ILSVRC2012_val_00033468.JPEG"]}
+{"image": "ILSVRC2012_val_00033468.JPEG", "category": "dishrag, dishcloth"}
+{"image": "ILSVRC2012_val_00031398.JPEG", "category": "handkerchief, hankie, hanky, hankey"}
+{"image": "ILSVRC2012_val_00020034.JPEG", "category": "chocolate sauce, chocolate syrup"}

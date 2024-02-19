@@ -1,0 +1,4 @@
+{"utterance": "Not arthropod.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00031784.JPEG"]}
+{"image": "ILSVRC2012_val_00031784.JPEG", "category": "mongoose"}
+{"image": "ILSVRC2012_val_00014964.JPEG", "category": "lacewing, lacewing fly"}
+{"image": "ILSVRC2012_val_00016568.JPEG", "category": "hermit crab"}

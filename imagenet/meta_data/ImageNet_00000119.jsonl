@@ -1,0 +1,4 @@
+{"utterance": "Not horse chestnut.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00049900.JPEG"]}
+{"image": "ILSVRC2012_val_00049900.JPEG", "category": "acorn"}
+{"image": "ILSVRC2012_val_00014129.JPEG", "category": "buckeye, horse chestnut, conker"}
+{"image": "ILSVRC2012_val_00029898.JPEG", "category": "buckeye, horse chestnut, conker"}

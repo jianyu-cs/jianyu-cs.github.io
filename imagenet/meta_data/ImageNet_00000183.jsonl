@@ -1,0 +1,4 @@
+{"utterance": "Not shelter.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00039599.JPEG"]}
+{"image": "ILSVRC2012_val_00039599.JPEG", "category": "pillow"}
+{"image": "ILSVRC2012_val_00038077.JPEG", "category": "mountain tent"}
+{"image": "ILSVRC2012_val_00022677.JPEG", "category": "mountain tent"}

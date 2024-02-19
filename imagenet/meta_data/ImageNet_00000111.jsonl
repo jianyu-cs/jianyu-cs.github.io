@@ -1,0 +1,4 @@
+{"utterance": "Not cnidarian.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00048600.JPEG"]}
+{"image": "ILSVRC2012_val_00048600.JPEG", "category": "ostrich, Struthio camelus"}
+{"image": "ILSVRC2012_val_00037668.JPEG", "category": "sea anemone, anemone"}
+{"image": "ILSVRC2012_val_00011860.JPEG", "category": "jellyfish"}

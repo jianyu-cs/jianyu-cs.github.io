@@ -1,0 +1,4 @@
+{"utterance": "Not coelenterate.", "type": "indirect implicature", "referents": ["ILSVRC2012_val_00020644.JPEG"]}
+{"image": "ILSVRC2012_val_00020644.JPEG", "category": "sea urchin"}
+{"image": "ILSVRC2012_val_00047328.JPEG", "category": "jellyfish"}
+{"image": "ILSVRC2012_val_00010664.JPEG", "category": "valley, vale"}

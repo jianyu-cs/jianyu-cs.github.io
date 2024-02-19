@@ -1,0 +1,4 @@
+{"utterance": "Not cliff.", "type": "indirect implicature", "referents": ["ILSVRC2012_val_00006071.JPEG"]}
+{"image": "ILSVRC2012_val_00006071.JPEG", "category": "seashore, coast, seacoast, sea-coast"}
+{"image": "ILSVRC2012_val_00030857.JPEG", "category": "cliff, drop, drop-off"}
+{"image": "ILSVRC2012_val_00034930.JPEG", "category": "cauliflower"}

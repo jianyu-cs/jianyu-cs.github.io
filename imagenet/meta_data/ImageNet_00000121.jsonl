@@ -1,0 +1,4 @@
+{"utterance": "Not citrus fruit.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00033353.JPEG"]}
+{"image": "ILSVRC2012_val_00033353.JPEG", "category": "ear, spike, capitulum"}
+{"image": "ILSVRC2012_val_00043565.JPEG", "category": "orange"}
+{"image": "ILSVRC2012_val_00036146.JPEG", "category": "lemon"}

@@ -1,0 +1,4 @@
+{"utterance": "Not sharpener.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00007723.JPEG"]}
+{"image": "ILSVRC2012_val_00007723.JPEG", "category": "stage"}
+{"image": "ILSVRC2012_val_00048136.JPEG", "category": "pencil sharpener"}
+{"image": "ILSVRC2012_val_00030855.JPEG", "category": "pencil sharpener"}

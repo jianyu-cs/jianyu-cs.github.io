@@ -1,0 +1,4 @@
+{"utterance": "Not daisy.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00015280.JPEG"]}
+{"image": "ILSVRC2012_val_00015280.JPEG", "category": "plate"}
+{"image": "ILSVRC2012_val_00035413.JPEG", "category": "daisy"}
+{"image": "ILSVRC2012_val_00005069.JPEG", "category": "daisy"}

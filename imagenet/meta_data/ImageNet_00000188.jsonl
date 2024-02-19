@@ -1,0 +1,4 @@
+{"utterance": "Not house.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00040912.JPEG"]}
+{"image": "ILSVRC2012_val_00040912.JPEG", "category": "stage"}
+{"image": "ILSVRC2012_val_00028364.JPEG", "category": "monastery"}
+{"image": "ILSVRC2012_val_00026772.JPEG", "category": "palace"}

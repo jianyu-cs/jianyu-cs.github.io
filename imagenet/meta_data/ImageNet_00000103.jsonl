@@ -1,0 +1,4 @@
+{"utterance": "Not gyromitra.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00000902.JPEG"]}
+{"image": "ILSVRC2012_val_00000902.JPEG", "category": "handkerchief, hankie, hanky, hankey"}
+{"image": "ILSVRC2012_val_00028705.JPEG", "category": "gyromitra"}
+{"image": "ILSVRC2012_val_00028981.JPEG", "category": "gyromitra"}

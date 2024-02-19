@@ -1,0 +1,4 @@
+{"utterance": "Not coral fungus.", "type": "indirect implicature", "referents": ["ILSVRC2012_val_00021034.JPEG"]}
+{"image": "ILSVRC2012_val_00021034.JPEG", "category": "stinkhorn, carrion fungus"}
+{"image": "ILSVRC2012_val_00035290.JPEG", "category": "coral fungus"}
+{"image": "ILSVRC2012_val_00043140.JPEG", "category": "cheeseburger"}

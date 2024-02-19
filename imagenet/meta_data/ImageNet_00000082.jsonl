@@ -1,0 +1,4 @@
+{"utterance": "Not seed.", "type": "indirect implicature", "referents": ["ILSVRC2012_val_00012582.JPEG"]}
+{"image": "ILSVRC2012_val_00012582.JPEG", "category": "pineapple, ananas"}
+{"image": "ILSVRC2012_val_00020478.JPEG", "category": "buckeye, horse chestnut, conker"}
+{"image": "ILSVRC2012_val_00015522.JPEG", "category": "guacamole"}

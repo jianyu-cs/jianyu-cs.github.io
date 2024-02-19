@@ -1,0 +1,4 @@
+{"utterance": "Not domestic dog.", "type": "indirect implicature", "referents": ["ILSVRC2012_val_00004719.JPEG"]}
+{"image": "ILSVRC2012_val_00004719.JPEG", "category": "Egyptian cat"}
+{"image": "ILSVRC2012_val_00041092.JPEG", "category": "Mexican hairless"}
+{"image": "ILSVRC2012_val_00022510.JPEG", "category": "traffic light, traffic signal, stoplight"}

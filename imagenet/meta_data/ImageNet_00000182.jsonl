@@ -1,0 +1,4 @@
+{"utterance": "Not piece of material.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00004440.JPEG"]}
+{"image": "ILSVRC2012_val_00004440.JPEG", "category": "rain barrel"}
+{"image": "ILSVRC2012_val_00013663.JPEG", "category": "bath towel"}
+{"image": "ILSVRC2012_val_00008401.JPEG", "category": "bib"}

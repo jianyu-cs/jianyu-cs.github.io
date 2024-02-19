@@ -1,0 +1,4 @@
+{"utterance": "Not seed.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00048253.JPEG"]}
+{"image": "ILSVRC2012_val_00048253.JPEG", "category": "sandbar, sand bar"}
+{"image": "ILSVRC2012_val_00016080.JPEG", "category": "buckeye, horse chestnut, conker"}
+{"image": "ILSVRC2012_val_00044564.JPEG", "category": "corn"}

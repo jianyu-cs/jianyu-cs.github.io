@@ -1,0 +1,4 @@
+{"utterance": "Not pizza pie.", "type": "indirect implicature", "referents": ["ILSVRC2012_val_00040684.JPEG"]}
+{"image": "ILSVRC2012_val_00040684.JPEG", "category": "potpie"}
+{"image": "ILSVRC2012_val_00043781.JPEG", "category": "pizza, pizza pie"}
+{"image": "ILSVRC2012_val_00026971.JPEG", "category": "stage"}

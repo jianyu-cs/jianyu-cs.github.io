@@ -1,0 +1,4 @@
+{"utterance": "Not arthropod.", "type": "indirect implicature", "referents": ["ILSVRC2012_val_00043505.JPEG"]}
+{"image": "ILSVRC2012_val_00043505.JPEG", "category": "chambered nautilus, pearly nautilus, nautilus"}
+{"image": "ILSVRC2012_val_00036289.JPEG", "category": "isopod"}
+{"image": "ILSVRC2012_val_00039161.JPEG", "category": "artichoke, globe artichoke"}

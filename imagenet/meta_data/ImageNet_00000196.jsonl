@@ -1,0 +1,4 @@
+{"utterance": "Not piece of furniture.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00046379.JPEG"]}
+{"image": "ILSVRC2012_val_00046379.JPEG", "category": "comic book"}
+{"image": "ILSVRC2012_val_00042512.JPEG", "category": "barber chair"}
+{"image": "ILSVRC2012_val_00015918.JPEG", "category": "four-poster"}

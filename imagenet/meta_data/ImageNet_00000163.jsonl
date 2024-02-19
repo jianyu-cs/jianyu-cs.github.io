@@ -1,0 +1,4 @@
+{"utterance": "Not afters.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00015007.JPEG"]}
+{"image": "ILSVRC2012_val_00015007.JPEG", "category": "pizza, pizza pie"}
+{"image": "ILSVRC2012_val_00044243.JPEG", "category": "trifle"}
+{"image": "ILSVRC2012_val_00029332.JPEG", "category": "trifle"}

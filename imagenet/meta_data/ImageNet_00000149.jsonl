@@ -1,0 +1,4 @@
+{"utterance": "Not entree.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00049527.JPEG"]}
+{"image": "ILSVRC2012_val_00049527.JPEG", "category": "consomme"}
+{"image": "ILSVRC2012_val_00021686.JPEG", "category": "plate"}
+{"image": "ILSVRC2012_val_00033117.JPEG", "category": "plate"}

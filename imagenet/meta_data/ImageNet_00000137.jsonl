@@ -1,0 +1,4 @@
+{"utterance": "Not meat loaf.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00027380.JPEG"]}
+{"image": "ILSVRC2012_val_00027380.JPEG", "category": "plate"}
+{"image": "ILSVRC2012_val_00047989.JPEG", "category": "meat loaf, meatloaf"}
+{"image": "ILSVRC2012_val_00031643.JPEG", "category": "meat loaf, meatloaf"}

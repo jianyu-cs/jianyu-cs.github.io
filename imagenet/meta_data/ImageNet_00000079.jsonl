@@ -1,0 +1,4 @@
+{"utterance": "Not citrus fruit.", "type": "indirect implicature", "referents": ["ILSVRC2012_val_00002336.JPEG"]}
+{"image": "ILSVRC2012_val_00002336.JPEG", "category": "custard apple"}
+{"image": "ILSVRC2012_val_00018338.JPEG", "category": "lemon"}
+{"image": "ILSVRC2012_val_00012162.JPEG", "category": "street sign"}

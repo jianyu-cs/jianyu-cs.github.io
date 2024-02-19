@@ -1,0 +1,4 @@
+{"utterance": "Not winter squash.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00010591.JPEG"]}
+{"image": "ILSVRC2012_val_00010591.JPEG", "category": "cauliflower"}
+{"image": "ILSVRC2012_val_00029658.JPEG", "category": "butternut squash"}
+{"image": "ILSVRC2012_val_00011524.JPEG", "category": "butternut squash"}
