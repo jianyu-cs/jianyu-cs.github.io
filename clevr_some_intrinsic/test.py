@@ -13,8 +13,6 @@ import os
 def main():
     meta_list = []
     for item in os.listdir("./meta_data"):
-        if "checkpoint" in item:
-            continue
         temp_item = item.rstrip(".jsonl").rstrip('.jsonl.swp').split("CLEVR_")[1]
         #if int(temp_item) >= 0 and int(temp_item) <= 100 and "jsonl" in item:
         if "jsonl" in item and int(temp_item) < 200:
