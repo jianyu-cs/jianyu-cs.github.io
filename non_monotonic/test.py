@@ -11,18 +11,31 @@ import os
 # args = parser.parse_args()
 
 def main():
+    # read compositional, local, and cancel
+    with open('compositional.txt', 'r') as f:
+        compositional = list(f)
+    compositional = [_.strip("\n") for _ in compositional[:100]]
+
+    with open("local.txt", "r") as f:
+        local = list(f)
+    local = [_.strip("\n") for _ in local[:100]]
+
+    with open("cancel.txt", "r") as f:
+        cancel = list(f)
+    cancel = [_.strip("\n") for _ in cancel[:100]]
+    
     meta_list = []
     for item in os.listdir("./meta_data"):
         if "checkpoint" in item:
             continue
         temp_item = item.rstrip(".jsonl").rstrip('.jsonl.swp').split("CLEVR_")[1]
         #if int(temp_item) >= 0 and int(temp_item) <= 100 and "jsonl" in item:
-        if "jsonl" in item and int(temp_item) < 200:
+        if "jsonl" in item:# and int(temp_item) < 200:
             meta_list.append(item)
         #elif int(temp_item) >= 300 and int(temp_item) <= 400 and "jsonl" in item:
         #    meta_list.append(item)
     meta_list = list(set(meta_list))
-        
+    k = 0
     visualizer = HTMLTableVisualizer('./html_visualizer', f'Non-monotonic Embedded Implicature Visualization, CLEVR Direct, Intrinsic Attributes, 200')
     with visualizer.html(), visualizer.table('In this reference game, the speaker will generate a statement to describe two images, and both the speaker and you will be rewarded if you can correctly identify both referent images. Please proceed by selecting your answers based on the corresponding numerical image index.', [
         HTMLTableColumnDesc('text', 'Text', 'raw'),
@@ -33,9 +46,13 @@ def main():
         HTMLTableColumnDesc('answer', 'Answer', 'raw'),
         #HTMLTableColumnDesc('type', 'Implicature Type', 'raw'),
     ]):
-        for k, file_name in enumerate(meta_list): #os.listdir("./meta_data/"):
+	
+        for m, file_name in enumerate(meta_list): #os.listdir("./meta_data/"):
             #image1_filename = f'./images/CLEVR_00000{int(start_idx)}.png'
             #image2_filename = f'./SoMs/CLEVR_00000{int(start_idx)}.png'
+            if file_name not in compositional+local+cancel:
+                continue
+            k += 1
             json_filename = f'./meta_data/{file_name}'
             #if start_idx >= 10:
             #    #image1_filename = f'./images/CLEVR_0000{int(start_idx)}.png'
@@ -57,7 +74,7 @@ def main():
             for item in data:
                 if "image_filename" in item:
                     image_filename = item['image_filename']
-                    images.append(os.path.join("./SoMs", "SoM_"+image_filename))
+                    images.append(os.path.join("./SoMs", image_filename))
                 if "utterance" in item:
                     utterance = item["utterance"]
                     impli_type = item["type"]
