@@ -23,7 +23,7 @@ def main():
         #    meta_list.append(item)
     meta_list = list(set(meta_list))
         
-    visualizer = HTMLTableVisualizer('./html_visualizer', f'Connective Implicature Visualization, CLEVR Direct, Intrinsic Attributes, 200')
+    visualizer = HTMLTableVisualizer('./html_visualizer', f'Non-monotonic Embedded Implicature Visualization, CLEVR Direct, Intrinsic Attributes, 200')
     with visualizer.html(), visualizer.table('In this reference game, the speaker will generate a statement to describe two images, and both the speaker and you will be rewarded if you can correctly identify both referent images. Please proceed by selecting your answers based on the corresponding numerical image index.', [
         HTMLTableColumnDesc('text', 'Text', 'raw'),
         HTMLTableColumnDesc('text1', 'ID', 'raw'),
@@ -57,7 +57,7 @@ def main():
             for item in data:
                 if "image_filename" in item:
                     image_filename = item['image_filename']
-                    images.append(os.path.join("./SoMs", image_filename))
+                    images.append(os.path.join("./SoMs", "SoM_"+image_filename))
                 if "utterance" in item:
                     utterance = item["utterance"]
                     impli_type = item["type"]
