@@ -1,4 +1,0 @@
-{"utterance": "Not vino.", "type": "indirect contextual cancellation", "referents": ["ILSVRC2012_val_00005624.JPEG"]}
-{"image": "ILSVRC2012_val_00005624.JPEG", "category": "espresso"}
-{"image": "ILSVRC2012_val_00014200.JPEG", "category": "red wine"}
-{"image": "ILSVRC2012_val_00023635.JPEG", "category": "red wine"}
